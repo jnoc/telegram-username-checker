@@ -22,7 +22,7 @@ python -m pip install configparser telethon
 cd *path to the folder*
 ```
 
-- 4b. Run the script via command line 
+- Run the script via command line 
 
 ```
 python check.py
