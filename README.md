@@ -1,6 +1,6 @@
 # Telegram Username Checker
 
-In order to use this tool you need have up to date versions of python and pip installed first. This uses telethon to interact with the telegram api and allows you to check usernames, however you need to obtain an api `id` and `hash` to use this checker. On first rn of the program you will first be prompted with a login (telephone) and then code sent to your telegram account. Once logged in a session file is created and you will be able to run the checker.
+In order to run this tool you need have up to date versions of python and pip installed first. This uses telethon to interact with the telegram api and allows you to check usernames, however you need to obtain an api `id` and `hash` to be able to call the username checks. On first run of the program you will first be prompted with a login (telephone) and then code sent to your telegram account. Once logged in a session file is created and you will be able to run the checker.
 
 ## Installation
 
