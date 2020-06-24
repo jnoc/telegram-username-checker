@@ -14,14 +14,14 @@ python -m pip install configparser telethon
 
 3. Edit the `config.ini` indisde a text editor. It explains what to do inside of it.
 4. You have 2 options from here
- a. You can directly run the python file by double clicking it
- b. Open the Command Prompt or Terminal. Navigate to the file:
+ A). You can directly run the python file by double clicking it or
+ B). Open the Command Prompt or Terminal. Navigate to the file:
 
 ```
 cd *path to the folder*
 ```
 
-5. Run the script via command line 
+4b. Run the script via command line 
 
 ```
 python check.py
