@@ -6,7 +6,7 @@ Obtain api `id` and `hash` here: https://core.telegram.org/api/obtaining_api_id
 
 ## Installation
 
-1. Download the zip or clone the repositor with Git to your machine
+1. Download the zip or clone the repository with Git to your machine.
 2. Install the dependencies using `setup.bat` (for windows) or the following command inside Command Prompt (Windows) or Terminal (Mac). If you use Python.exe, it will not work.
 
 ```
@@ -15,14 +15,14 @@ python -m pip install configparser telethon
 
 3. Edit the `config.ini` indisde a text editor. It explains what to do inside of it.
 4. You have 2 options from here
- A). You can directly run the python file by double clicking it or
- B). Open the Command Prompt or Terminal. Navigate to the file:
+ - A). You can directly run the python file by double clicking it or
+ - B). Open the Command Prompt or Terminal. Navigate to the file:
 
 ```
 cd *path to the folder*
 ```
 
-4b. Run the script via command line 
+- 4b. Run the script via command line 
 
 ```
 python check.py
