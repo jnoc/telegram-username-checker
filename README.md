@@ -1,5 +1,31 @@
 # Telegram Username Checker
 
-In order to use this tool you need have up to date versions of python and pip installed first. This uses telethon to interact with the telegram api and allows you to check usernames, however you need to obtain an api `id` and `hash` to login and call the check method on the api. `setup.bat` can be used to install the imports for the checker on windows or you can type `pip install configparser telethon` into your cmd to install them manually. Once installed open up a command prompt, cd to the file path and run `python check.py` you will first be prompted with a login (telephone) and then code sent to your telegram account. Once logged in a session file is created and you will be able to run the checker.
+In order to use this tool you need have up to date versions of python and pip installed first. This uses telethon to interact with the telegram api and allows you to check usernames, however you need to obtain an api `id` and `hash` to use this checker. On first rn of the program you will first be prompted with a login (telephone) and then code sent to your telegram account. Once logged in a session file is created and you will be able to run the checker.
 
+## Installation
+
+1. Download the zip or clone the repositor with Git to your machine
+2. Install the dependencies using `setup.bat` (for windows) or the following command inside Command Prompt (Windows) or Terminal (Mac). If you use Python.exe, it will not work.
+
+```
+python -m pip install configparser telethon
+
+```
+
+3. Edit the `config.ini` indisde a text editor. It explains what to do inside of it.
+4. You have 2 options from here
+ a. You can directly run the python file by double clicking it
+ b. Open the Command Prompt or Terminal. Navigate to the file:
+
+```
+cd *path to the folder*
+```
+
+5. Run the script via command line 
+
+```
+python check.py
+```
+
+## Disclaimer
 I do not condone breaking TOS of the Telegram api with this tool.
