@@ -29,9 +29,12 @@ def userLookup(account):
             
         else:
             print("The telegram", account, "is not available")
-    except errors.FloodWaitError as e:
-        print("Hit the rate limit, waiting", e.seconds, "seconds")
-        time.sleep(e.seconds)
+    except errors.FloodWaitError as fW:
+        print("Hit the rate limit, waiting", fW.seconds, "seconds")
+        time.sleep(fW.seconds)
+    except errors.UsernameInvalidError as uI:
+        print("Username is invalid")
+    
         
 def getWords():
     words = []
