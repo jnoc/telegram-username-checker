@@ -9,7 +9,6 @@ In order to run this tool you need have up to date versions of python and pip in
 
 ```
 python -m pip install configparser telethon
-
 ```
 
 3. Edit the `config.ini` indisde a text editor. It explains what to do inside of it.
