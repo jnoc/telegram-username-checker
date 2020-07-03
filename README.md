@@ -4,6 +4,7 @@ In order to run this tool you need have up to date versions of python and pip in
 
 Obtain api `id` and `hash` here: https://core.telegram.org/api/obtaining_api_id
 
+If you have a question about the rate limit read here https://github.com/jnoc/telegram-username-checker/issues/2#issuecomment-653112868
 ## Installation
 
 1. Download the zip or clone the repository with Git to your machine.
