@@ -12,6 +12,7 @@ config.read('config.ini')
 id = config.get('default','api_id')
 hash = config.get('default','api_hash')
 
+
 if id =='UPDATE ME' or hash == 'UPDATE ME':
     print("Please read the config.ini and README.md")
     input()
@@ -26,7 +27,9 @@ def userLookup(account):
         result = client(functions.account.CheckUsernameRequest(username=account))
         if result == True:
             print("The telegram", account, "is available")
-            
+            file = open(output(), 'a')
+            file.write("%s\n" % (account))
+            file.close()
         else:
             print("The telegram", account, "is not available")
     except errors.FloodWaitError as fW:
@@ -34,10 +37,12 @@ def userLookup(account):
         time.sleep(fW.seconds)
     except errors.UsernameInvalidError as uI:
         print("Username is invalid")
-    
+        
+        
         
 def getWords():
     words = []
+    delay = config.get('default', 'delay')
     path = os.path.join("word_lists", config.get('default','wordList'))
     if path is not None:
         file = open(path, 'r', encoding='utf-8-sig')
@@ -49,9 +54,16 @@ def getWords():
     for i in range(len(words)):
         name = words[i]
         userLookup(name)
+        time.sleep(int(delay))
+        # delay to deter hitting rate limit
+        # https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this
     print("All done")
     input("Press enter to exit...")
         
+        
+def output():
+    return config.get('default', 'outPut', fallback="AVAILABLE.txt")
+    
 def main():
         print('''
 ▄▄▄█████▓▓█████  ██▓    ▓█████   ▄████  ██▀███   ▄▄▄       ███▄ ▄███▓
