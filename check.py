@@ -37,6 +37,8 @@ def userLookup(account):
         time.sleep(fW.seconds)
     except errors.UsernameInvalidError as uI:
         print("Username is invalid")
+    except errors.rpcbaseerrors.BadRequestError as bR:
+        print("Error:", bR.message)
         
         
         
